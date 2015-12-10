@@ -1,219 +1,138 @@
 html {
 	width: 100%;
-	min-width: 800px;
 	height: 100%;
-	overflow: auto;
-	font-family: 'Roboto', sans-serif;
-}
-
-p {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-a {
-	text-decoration: none;
-}
-
-iframe {
-	border-style: none;
-}
-
-#container {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	min-width: 800px;
-	height: 100%;
-	background-color: #FFFFFF;
-	z-index: 0;
-	display: inline-block;
-}
-
-#leftColumn {
-	position: fixed;
-	top: 0;
-	width: 20%;
-	min-width: 200px;
-	height: 100%;
-	background-color: #2196f3;
-	color: white;
-	text-align: center;
-	display: inline-block;
-	font-size: 100%;
-	z-index: 10;
-	
-}
-
-#content {
-	position: absolute;
-	text-align: center;
-	right: 0%;
-	height: 100%;
-	width: 80%;
-	min-width: 600px;
-	background-color: white;
-	display: inline-block;
-}
-
-.choice {
-	position: relative;
-	top: 0px;
-	width: 100%;
-	height: 50px;
-	color: white;
-	transition: background-color .5s ease;
-	background-color: #2196f3;
-}
-
-.choice:hover {
-	position: relative;
-	top: 0px;
-	width: 100%;
-	height: 50px;
-	color: white;
-	transition: background-color .5s ease;
-	background-color: #1e88e5;
-}
-
-.choice:active {
-	position: relative;
-	top: 0px;
-	width: 100%;
-	height: 50px;
-	color: white;
-	transition: background-color .25s ease;
-	background-color: #1565c0;
-}
-
-/*Choices to choose from*/
-#aboutMe {
-
-}
-
-#resume {
-	
-}
-
-#github {
-	
-}
-
-#linkedin {
-	
-}
-
-#solstice {
-	
-}
-
-#lab {
-	
-}
-
-#contact {
-	
-}
-
-
-
-/*DIVS WITH INFO*/
-
-#resumepic {
-	display: block;
-	width: 100%;
-	height: 100%;
-	min-width: 600px;
+	background: black;
+	font-family: 'Open Sans', sans-serif;
 	overflow: hidden;
 }
 
-#aboutMeinfo {
-	display: block;
-	width: 80%;
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#HeroBox {
+	width: 100%;
 	height: 100%;
-	min-width: 600px;
-	margin: 0 auto;
-	font-size: 20px;
-	font-weight: bold;
-}
-
-
-#solsticePic {
+	background: #1A2980; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #1A2980 , #26D0CE); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #1A2980 , #26D0CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+	color: white;
+	margin: 0;
 	display: block;
-	width: 80%;
-	height: 40%;
-	margin: 0 auto;
 }
 
-#solsticeInfo {
+#HeroText {
+	width: 80%;
+	padding: 0% 10%;
+	margin: 0%;
+	height: 50%;
+	text-align: center;
+	position: relative;
 	display: block;
-	width: 80%;
-	height: 60%;
-	min-width: 600px;
-	margin: 0 auto;
-	font-size: 20px;
-	font-weight: bold;
 }
 
-
-#cssMenu {
+#HeroText h1 {
 	position: absolute;
-	top: 0;
-	width: 200px;
-	height: 100%;
-	background-color: #42a5f5;
-	z-index: 3;
+	bottom: 15%;
+	text-align: center;
+	width: 80%;
+	font-size: 4em;
+	display: block;
 }
 
-/*CSS MENU CHOICES*/
+#HeroText h3 {
+	position: absolute;
+	bottom: 0%;
+	text-align: center;
+	width: 80%;
+	display: block;
+}
 
-#materialForm {
-	width: 100%;
-	height: 45px;
-	top: 0;
+#HeroBox #navbar {
+	width: 92%;
+	display: block;
+	height: 50%;
+	/*background: red;*/ 
+	padding: 0% 4%;
+	margin: 0;	
+}
+
+#HeroBox #navbar a {
+	width: 32.5%;
+	display: inline-block;
+	margin: 5% 0%;
+	padding: 0;
+	text-align: center;
 	color: white;
-
-	transition: background-color .5s ease;
-	background-color: #42a5f5;	
+	text-decoration: none;
+	font-size: 1.3em;
 }
 
-#materialForm:hover {
-	position: relative;
-	top: 0px;
+#HeroBox #navbar a:after {
+	content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+#HeroBox #navbar a:hover {
+  	text-decoration: none;
+}
+
+#HeroBox #navbar a:hover:after {
 	width: 100%;
-	height: 45px;
+	background: white;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+footer a {
 	color: white;
-
-	transition: background-color .5s ease;
-	background-color: #1e88e5;
+	text-decoration: none;
+	margin-bottom: 5%;
 }
 
-#materialForm:active {
-	position: relative;
-	top: 0px;
-	width: 100%;
-	height: 45px;
-	color: white;
-
-	transition: background-color .25s ease;
-	background-color: #1565c0 ;
+footer a:after {
+	content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
 }
 
-#Form {
+footer a:hover:after {
 	width: 100%;
-	height: 100%;
+	background: white;
 }
 
-#SolsticeLogo {
+/*Media Queries*/
+@media screen and (max-width: 414px) {
+	#HeroText h1 {
+	bottom: 25%;
+	font-size: 2em;
+	}
+	#HeroBox #navbar a {
+	display: block;
 	width: 100%;
-	height: 100%;
-	z-index: 2;
+	text-align: center;
+	}
 }
 
-#SolsticeLogoOpener {
-	width: 100%;
+@media screen and (max-width: 736px) {
+	#HeroText h1 {
+	bottom: 25%;
+	font-size: 2em;
+	}
 }
